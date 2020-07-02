@@ -1,6 +1,7 @@
 package com.ckbs.csp.sb.web;
 
 import com.ckbs.csp.sb.web.dto.HelloResponseDto;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,7 +12,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello(){
-        return "Hello, CKBS !! 0626";
+        return "index";
     }
 
     @GetMapping("/hello/dto2")
